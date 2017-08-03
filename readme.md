@@ -1,34 +1,34 @@
 # pm2-connect
 
-## 想法
-遠端監控PM2
+## 介紹
 
-由被監控端使用pm2-connect來建立一個Socket Client Server，與Socket Host Server進行連線後，定期的傳送伺服器 & PM2資訊到Host Server上。
+這個東西很簡單，透過Socket.io.client定期傳送資料到指定的伺服器上，進而實現遠端監控。
 
-~~主要是因為我沒錢租用`keymetrics`，乖乖土砲了~~
+## Server
 
-Host Server用處：
-- 接收各端伺服器的資訊，以及監控Socket連線狀態(`主要是遠端的Socket斷線應傳送要警報資訊`)
-- 提供GUI介面顯示伺服器的狀況
+請參照 pm2-connect-server(建構中) (當然你也可以自行實現一個接收資料的Socket Server，自己去看一下原碼，夠短了)
 
-
-## Cli Example (構思)
+## 如何使用
 
 ```
-
-$ pm2-connect link [hostServerUrl]
-$ pm2-connect unlink
-$ pm2-connect server -p [port]
-
+$ pm2-connect link [host]
 ```
+
+## Kill Process
+
+我不想寫，麻煩自己pm2 kill =)
 
 ## API
 
-> 暫不做，先把CLI搞好在說
+哪天想到在弄
 
 ## TODO
-- [ ] Cli Command Line Generate
+- [X] Cli Command Line Generate
 - [X] Client Connect Socket Send Data
-- [ ] Server Generate
-- [ ] OS Status
-- [ ] PM2 Status
+- [X] OS Status
+- [X] PM2 Status
+- [ ] PM2 Method(open, restart, stop, delete)
+- [ ] PM2 Log Stream
+- [ ] PM2-Connect Server
+  - [ ] Server Generate
+  - [ ] GUI Design

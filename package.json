@@ -1,0 +1,28 @@
+{
+  "name": "pm2-connect",
+  "bin": {
+    "pm2-connect": "./bin/pm2-connect"
+  },
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "keywords": [
+    "pm2",
+    "socket",
+    "pm2-connect",
+    "remote"
+  ],
+  "author": "Su Ming Feng",
+  "license": "MIT",
+  "dependencies": {
+    "pm2": "^2.6.1",
+    "socket.io-client": "^2.0.3",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+
+  }
+}
