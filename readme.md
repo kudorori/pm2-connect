@@ -6,8 +6,8 @@
 
 ## Install
 ```
-$ npm i -G pm2
-$ npm i -G pm2-connect
+$ npm i -g pm2
+$ npm i -g pm2-connect
 ```
 
 ## 如何使用
@@ -26,8 +26,30 @@ $ pm2-connect link [HOST]
 
 ## Server
 
-請參照 pm2-connect-server(建構中) (當然你也可以自行實現一個接收資料的Socket Server，自己去看一下原碼，夠短了)
+請參照 [pm2-connect-server](https://github.com/kudorori/pm2-connect-server) (當然你也可以自行實現一個接收資料的Socket Server，自己去看一下原碼，夠短了)
 
+## Object Type
+
+```
+  {
+    hostname ,
+    uptime,
+    loadavg,
+    totalmem,
+    freemem,
+    release,
+    cpus,
+    networkInterfaces,
+    arch,
+    tmpdir,
+    endianness,
+    type,
+    platform,
+    processList: [{
+      // 參考pm2 API [pm2.describe()]的輸出格
+    }]
+  }
+```
 
 
 ## TODO
