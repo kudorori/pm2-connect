@@ -6,9 +6,7 @@
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
-  "scripts": {
-
-  },
+  "scripts": {},
   "keywords": [
     "pm2",
     "socket",
@@ -22,7 +20,5 @@
     "socket.io-client": "^2.0.3",
     "yargs": "^8.0.2"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
