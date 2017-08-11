@@ -3,7 +3,7 @@
   "bin": {
     "pm2-connect": "./bin/pm2-connect"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {},
@@ -13,7 +13,15 @@
     "pm2-connect",
     "remote"
   ],
-  "author": "Su Ming Feng",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kudorori/pm2-connect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kudorori/pm2-connect/issues"
+  },
+  "homepage": "https://github.com/kudorori/pm2-connect#readme",
+  "author": "Ming Feng, Su",
   "license": "MIT",
   "dependencies": {
     "pm2": "^2.6.1",

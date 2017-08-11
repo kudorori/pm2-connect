@@ -57,8 +57,5 @@ $ pm2-connect link [HOST]
 - [X] Client Connect Socket Send Data
 - [X] OS Status
 - [X] PM2 Status
-- [ ] PM2 Method(open, restart, stop, delete)
+- [X] PM2 Method(start, restart, stop)
 - [ ] PM2 Log Stream
-- [ ] PM2-Connect Server
-  - [ ] Server Generate
-  - [ ] GUI Design

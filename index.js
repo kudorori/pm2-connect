@@ -11,6 +11,13 @@ socket.on('connect', function(so){
   }, 5000);
 });
 
+
+socket.on("pm2-connect-start", id => pm2Tool.start(id))
+
+socket.on("pm2-connect-stop", id => pm2Tool.stop(id))
+
+socket.on("pm2-connect-restart", id => pm2Tool.restart(id))
+
 socket.on('disconnect', function(){
   clearInterval(timer);
 });
